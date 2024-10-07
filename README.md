@@ -30,11 +30,11 @@ In `grails-app/conf/DataSource.groovy`, configure the MSSQL database connection 
 
 ```groovy
 dataSource {
-    pooled = true
     driverClassName = "net.sourceforge.jtds.jdbc.Driver"
-    username = "sa"
-    password = "Sem2023*"
-    url = "jdbc:jtds:sqlserver://192.168.1.48:31433/to_do"
+    username = "username"
+    password = "password"
+    url = "jdbc:jtds:sqlserver://<ip_address>:<port>/to_do"
+    dbCreate = "update"  // use "create-drop" for the first time if you want to create tables automatically
 }
 
 environments {w

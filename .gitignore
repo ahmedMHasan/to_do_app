@@ -1,1 +1,15 @@
 /target/classes/
+# Gradle files
+.gradle/
+build/
+out/
+# IDE files
+.idea/
+*.iml
+# Log files
+*.log
+# Other
+*.class
+*.jar
+*.war
+*.db
